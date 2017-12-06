@@ -37,7 +37,7 @@ def main():
 def run_test_problem3a():
     """ Tests the   problem3a   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  problem1a  function defined below.
     #   Include at least **   5   ** tests (we wrote four for you).
     # ------------------------------------------------------------------
@@ -96,6 +96,19 @@ def run_test_problem3a():
     print('       actual:  ', answer)
 
     window3.close_on_mouse_click()
+
+    # Window 4:
+    title = 'Problem 3a. Test 5: Start at (40,40) 10 Lines'
+    window4 = rg.RoseWindow(450,300, title)
+
+    # Test 5 (it is on window 4):
+    point = rg.Point(40,40)
+    expected = __
+    answer = problem3a(window4, point, 10)
+    print()
+    print('Test 5 expect:', expected)
+    print('       actual:', answer)
+
 
     # ------------------------------------------------------------------
     # TO DO: 2 (continued).
